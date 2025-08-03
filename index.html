@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Responsive QR Code Generator</h1>
+  <form id="qr-form">
+    <label for="text-input">Enter URL or App Name</label>
+    <input type="text" id="text-input"placeholder="e.g. https://example.com" autocomplete="off"/>
+    <button type="submit">Generate QR Code</button>
+    <button type="button" id="clear-btn">Clear QR Code</button>
+  </form>
+
+  <div class="qr-container" id="qr-container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
